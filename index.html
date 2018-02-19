@@ -8,7 +8,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-  </div>
+   <div class="container">
+        <form>
+            <fieldset>
+                <legend> Informations personnelles </legend>
+
+            <div>
+                 <label for="uname"> Prénom *  </label>
+                 <input type="text" id="uname" name="name"placeholder=" Inserer votre prénom ici"  required>
+
+                <label for="ulast-name"> Nom *  </label>
+                <input type="text" id="ulast-name" name="last-name" placeholder=" Inserer votre nom ici"  required>
+            </div>
+
+                <div>
+                Date de naissence * <input type="date" name="" id="" value="jj/ mm/ aaaa" required>
+               </div>
+            </fieldset>
+            <div>
+               <label for="number-player"> Numéro du joueur (compris entre 9 et 99) </label>
+               <input type="number" name="number-player" step="10" min="9" max="99">
+            </div>
+
+            <fieldset>
+                <legend> Liste des postes auxquels je peux évoluer </legend>
+
+                <div>
+                <input type="checkbox" value="" name="emplacement" value="coding"> 
+                <label for="coding">Défenseur</label>
+                </div>
+            <div>
+                <input type="checkbox" value="" name="emplacement" value="coding">  
+                <label for="coding">Milieu</label>
+            </div>
+            <div>
+               <input type="checkbox" value="" name="emplacement" value="coding"> 
+               <label for="coding"> Attaquant</label>
+            </div>
+                <input type="button" value="Obtenir des informations supplémentaires sur les potes">
+            </fieldset>
+                <input type="submit" value="Envoyer"> *= Champs obligatoires
+        </form>
+
+    </div>
 </body>
 </html>
